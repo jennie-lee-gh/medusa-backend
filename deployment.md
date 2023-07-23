@@ -18,6 +18,10 @@ Register a new account at [https://railway.app/](https://railway.app/). (Availab
 
 Dashboard 页面新建 postgres 项目, 完成后在项目页面空白区域右键选择 database, 新增一个 redis.
 
+新建一个 GitHub 链接, 由于是 monorepo 结构, 在 settings 中把 root directory 设置为 `/servers/medusa-service`.
+
+TODO: 删除 docker file
+
 ## Setup
 
 ### 1. Install Postgres

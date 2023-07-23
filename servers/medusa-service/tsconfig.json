@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2019",
+    "lib": ["es5", "es6"],
+    "target": "esnext",
     "allowJs": true,
     "esModuleInterop": true,
     "module": "commonjs",
@@ -9,22 +10,16 @@
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "declaration": true,
+    "declaration": false,
     "sourceMap": false,
     "outDir": "./dist",
-    "rootDir": "./src",
-    "baseUrl": ".",
-    "jsx": "react-jsx",
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "checkJs": false
+    "rootDir": "src",
+    "baseUrl": "src"
   },
-  "include": ["src/"],
+  "include": ["src"],
   "exclude": [
     "**/__tests__",
     "**/__fixtures__",
-    "node_modules",
-    "build",
-    ".cache"
+    "node_modules"
   ]
 }
