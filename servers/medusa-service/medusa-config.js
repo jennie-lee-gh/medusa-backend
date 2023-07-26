@@ -71,11 +71,11 @@ const modules = {
 const projectConfig = {
   jwtSecret: process.env.JWT_SECRET,
   cookieSecret: process.env.COOKIE_SECRET,
-  store_cors: STORE_CORS,
-  database_url: DATABASE_URL,
-  admin_cors: ADMIN_CORS,
+  store_cors: process.env.STORE_CORS,
+  database_url: process.env.DATABASE_URL,
+  admin_cors: process.env.ADMIN_CORS || "*", // If you have a specific admin CORS setting, use it. Otherwise, you can default to '*'.
   // Uncomment the following lines to enable REDIS
-  redis_url: REDIS_URL
+  redis_url: process.env.REDIS_URL
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
